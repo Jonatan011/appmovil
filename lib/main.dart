@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/counter_home_screen.dart';
+
+import 'package:flutter_application_1/screen/home_screen.dart';
 
 void main() {
   runApp(const Myapp());
@@ -10,10 +13,9 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        home: Center(
-      child: Text("MawiApps"),
-    ));
+      debugShowCheckedModeBanner: false,
+      //home: HomeScreen(),
+      home: CounterScreen(),
+    );
   }
-  hello world
-  
 }
